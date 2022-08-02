@@ -27,4 +27,5 @@ jobs:
         uses: gitarun786/ms-teams-notificationarun@v1.2
         with:
           webhook_uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}   
-          message: "This is from custom actions created by Arun :-) ." 
+          message: "GitHub Action number ${{ github.run_number }} for ${{ github.repository }} triggered by ${{ github.actor }} is complted with ${{ needs.build.result }} status." 
+ 
